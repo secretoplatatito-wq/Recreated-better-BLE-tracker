@@ -1,0 +1,6 @@
+{
+  "name": "BLE Radar Locator v2.0 - Tactical RF & Mesh Positioning",
+  "description": "High-precision BLE, Wi-Fi 7 CSI, Hotspot & Mesh triangulation radar with 3D projection, UUID/UID decoding, real-time tracking, signal logging, and downloadable v2.0 dolphyplugin.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

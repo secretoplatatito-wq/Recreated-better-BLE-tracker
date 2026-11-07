@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #030706;
+    color: #4ade80;
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Custom Radar & Scanline Styling */
+.crt-overlay {
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+.radar-glow {
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.2), inset 0 0 35px rgba(16, 185, 129, 0.15);
+}
+
+.hud-border {
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  background: rgba(6, 18, 12, 0.7);
+  backdrop-filter: blur(12px);
+}
+
+.hud-border-cyan {
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  background: rgba(6, 20, 26, 0.7);
+  backdrop-filter: blur(12px);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020b06;
+}
+::-webkit-scrollbar-thumb {
+  background: #064e3b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
